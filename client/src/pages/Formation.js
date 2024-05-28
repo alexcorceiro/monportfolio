@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
-import { Grid, Card, Label, Icon } from 'semantic-ui-react';
+import React, { useState } from 'react';
+import { Grid, Card, Label } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-import './css/formation.css';  // Assurez-vous que le chemin d'accès est correct
+import { motion } from 'framer-motion';
+import './css/formation.css';
 
 const Formation = () => {
   let timelineEntries = [
@@ -19,33 +20,37 @@ const Formation = () => {
 
   return (
     <div className='formation'>
-    <h2> Formations Professionnelles :</h2>
-    <div className='formation-container'>
-    <Grid>
-        {timelineEntries.map((entry, index) => (
-          <Grid.Row key={index}>
-            <Grid.Column width={8} floated={entry.category === "formation" ? 'left' : 'right'}>
-              <Card 
-                fluid 
-                onMouseEnter={() => setVisibleDescription(index)} // Afficher la description au survol
-                onMouseLeave={() => setVisibleDescription(null)} // Masquer la description lorsque la souris quitte la carte
-              >
-                <Card.Content>
-                  <Label className='fromation-year' ribbon={entry.category === "formation" ? 'right' : 'left'}>{entry.year}</Label>
-                  <Card.Header > <h3 className='formation-header'>{entry.title}</h3></Card.Header>
-                  <Card.Meta>{entry.subtitle}</Card.Meta>
-                  {visibleDescription === index && (
-                    <Card.Description style={{color: 'white'}}>{entry.description}</Card.Description>
-                  )}
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-          </Grid.Row>
-        ))}
-      </Grid>
+      <h2> Formations Professionnelles :</h2>
+      <div className='formation-container'>
+        <Grid>
+          {timelineEntries.map((entry, index) => (
+            <Grid.Row key={index}>
+              <Grid.Column width={8} floated={entry.category === "formation" ? 'left' : 'right'}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Card
+                    fluid
+                    onMouseEnter={() => setVisibleDescription(index)} // Afficher la description au survol
+                    onMouseLeave={() => setVisibleDescription(null)} // Masquer la description lorsque la souris quitte la carte
+                  >
+                    <Card.Content>
+                      <Label className='formation-year' ribbon={entry.category === "formation" ? 'right' : 'left'}>{entry.year}</Label>
+                      <Card.Header><h3 className='formation-header'>{entry.title}</h3></Card.Header>
+                      <Card.Meta>{entry.subtitle}</Card.Meta>
+                      {visibleDescription === index && (
+                        <Card.Description style={{ color: 'white' }}>{entry.description}</Card.Description>
+                      )}
+                    </Card.Content>
+                  </Card>
+                </motion.div>
+              </Grid.Column>
+            </Grid.Row>
+          ))}
+        </Grid>
       </div>
-    
-  </div>
+    </div>
   );
 };
 
