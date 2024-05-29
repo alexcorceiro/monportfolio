@@ -32,7 +32,7 @@ const Language = () => {
               whileHover={{ scale: 1.1 }} 
               whileTap={{ scale: 0.95 }}
             >
-              <Card sx={{ minWidth: 275, maxWidth: 300 }} className="language-card">
+              <Card sx={{ minWidth: 275, maxWidth: 300 , backgroundColor: "#383636", color: "white"}} className="language-card">
                 <div className='language-card-content'>
                   {skill.Icon && <skill.Icon size="5em" />}
                   <Typography variant="h6" component="div">
