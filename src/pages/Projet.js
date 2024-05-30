@@ -10,24 +10,25 @@ const theme = createTheme();
 
 const projects = [
   {
-    url: "/manga.webp",
+    url: process.env.PUBLIC_URL + "/manga.webp",
     title: 'Manga Connect',
     description: 'Un réseau social dynamique dédié aux passionnés de manga.',
     techStack: ['#react', '#nodejs', '#sql', '#python', '#aws']
   },
   {
-    url: "/prodigeo.png",
+    url: process.env.PUBLIC_URL + "/prodigeo.png",
     title: 'Prodigeo',
     description: "Conception et implémentation de systèmes pour la génération dynamique de PDF, intégration de tarification basée sur la sélection d'options par l'utilisateur.",
     techStack: ['#react', '#aws']
   },
   {
-    url: "/eleveur.webp",
+    url: process.env.PUBLIC_URL + "/eleveur.webp",
     title: 'Le Petit Éleveur',
     description: 'Une application innovante pour les éleveurs, facilitant la gestion des perruches et autres animaux de compagnie avec des fonctionnalités comme le suivi de la santé, et une base de données complète des aliments.',
     techStack: ['#react', '#sql', '#nodejs']
   },
 ];
+
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
