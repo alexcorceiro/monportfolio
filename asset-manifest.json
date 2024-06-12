@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/monportfolio/static/css/main.e53977a0.css",
-    "main.js": "/monportfolio/static/js/main.5411a54b.js",
-    "static/js/453.258b012d.chunk.js": "/monportfolio/static/js/453.258b012d.chunk.js",
+    "main.css": "/monportfolio/static/css/main.fb16ff87.css",
+    "main.js": "/monportfolio/static/js/main.157b73ea.js",
     "static/media/brand-icons.svg": "/monportfolio/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/monportfolio/static/media/icons.62d9dae4e0040e81c980.svg",
-    "static/media/fon1.jpg": "/monportfolio/static/media/fon1.ad33bcaa65504d2c6f1a.jpg",
     "static/media/outline-icons.svg": "/monportfolio/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
     "static/media/icons.eot": "/monportfolio/static/media/icons.a01e3f2d6c83dc3aee17.eot",
     "static/media/icons.ttf": "/monportfolio/static/media/icons.c656b8caa454ed19b9a2.ttf",
@@ -21,12 +19,11 @@
     "static/media/outline-icons.woff": "/monportfolio/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
     "static/media/outline-icons.woff2": "/monportfolio/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/monportfolio/index.html",
-    "main.e53977a0.css.map": "/monportfolio/static/css/main.e53977a0.css.map",
-    "main.5411a54b.js.map": "/monportfolio/static/js/main.5411a54b.js.map",
-    "453.258b012d.chunk.js.map": "/monportfolio/static/js/453.258b012d.chunk.js.map"
+    "main.fb16ff87.css.map": "/monportfolio/static/css/main.fb16ff87.css.map",
+    "main.157b73ea.js.map": "/monportfolio/static/js/main.157b73ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.e53977a0.css",
-    "static/js/main.5411a54b.js"
+    "static/css/main.fb16ff87.css",
+    "static/js/main.157b73ea.js"
   ]
 }
