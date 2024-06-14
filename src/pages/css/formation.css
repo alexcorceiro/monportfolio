@@ -1,0 +1,108 @@
+.formation {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color:#2E2E2E;
+  color: whitesmoke;
+}
+
+.formation-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.formation-container {
+  width: 70%;
+  height:auto;
+margin-bottom: 3rem;
+}
+
+.ui.ribbon.label {
+  color: #ece8e8;
+  font-weight: bold;
+  background-color: #072679;
+  margin-bottom: 2%;
+}
+
+.ui.card>.content {
+  font-size: 16px;
+  background-color: #666;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formation-header {
+  color: #ece8e8;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .formation h2 {
+    font-size: 2rem;
+  }
+
+  .ui.card>.content {
+    font-size: 14px;
+  }
+
+  .formation-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .formation h2 {
+    font-size: 1.8rem;
+  }
+
+  .ui.card>.content {
+    font-size: 13px;
+  }
+
+  .formation-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formation h2 {
+    font-size: 1.5rem;
+  }
+
+  .ui.card>.content {
+    font-size: 12px;
+  }
+
+  .formation-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .formation h2 {
+    font-size: 1.2rem;
+  }
+
+  .ui.card>.content {
+    font-size: 11px;
+  }
+
+  .formation-container {
+    width: 100%;
+  }
+
+  .ui.ribbon.label {
+    font-size: 0.8rem;
+  }
+}

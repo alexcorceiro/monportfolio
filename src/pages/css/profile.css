@@ -1,0 +1,113 @@
+.profile {
+  background-color: #2E2E2E;
+  min-height: 100vh;
+  width: 100%;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.profile-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  font-style: normal;
+  position: relative;
+  animation: titleFadeIn 1s ease-in-out;
+}
+
+@keyframes titleFadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-text {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  animation: textFadeIn 1.5s ease-in-out;
+}
+
+@keyframes textFadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.profile-header-left {
+  flex: 1;
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.profile-header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
+}
+
+.profile-bottom {
+  width: 100%;
+  padding: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.skill-card {
+  min-width: 200px;
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0; /* Empêche les cartes de se réduire en taille */
+  background-color: #444;
+  color: #fff;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}

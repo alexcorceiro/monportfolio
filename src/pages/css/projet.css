@@ -1,0 +1,139 @@
+.projet {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2E2E2E;
+  padding: 20px;
+}
+
+.projet-container {
+  color: #333; /* Couleur foncée pour le titre pour une bonne lisibilité */
+  margin-bottom: 20px; /* Marge sous le titre pour séparer du contenu */
+  width: 80%;
+  border-radius: 8px; /* Bords arrondis pour le style */
+  padding: 20px; /* Padding pour l'intérieur du conteneur */
+}
+
+.projet-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.project-details {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+.project-details h6 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.project-details p {
+  margin: 5px 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-item {
+  background: #faf8f8;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.project-close-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-close-button:hover {
+  background-color: #555;
+}
+
+.MuiImageBackdrop-root {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .projet-container {
+    width: 90%;
+  }
+
+  .projet-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projet-container {
+    width: 95%;
+  }
+
+  .projet-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projet-container {
+    width: 100%;
+  }
+
+  .projet-title {
+    font-size: 1.5rem;
+  }
+
+  .project-details {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projet-container {
+    width: 100%;
+  }
+
+  .projet-title {
+    font-size: 1.2rem;
+  }
+
+  .project-details {
+    padding: 10px;
+  }
+
+  .tech-item {
+    font-size: 0.8rem;
+  }
+
+  .project-close-button {
+    font-size: 0.9rem;
+  }
+}
