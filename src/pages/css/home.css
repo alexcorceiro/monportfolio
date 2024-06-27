@@ -15,7 +15,7 @@
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  /* Supprimé les styles de fond, padding, ombre et bordure */
+  flex-wrap: wrap; /* Assurer que les éléments se plient correctement sur les petits écrans */
 }
 
 .home-left {
@@ -41,7 +41,7 @@
   position: relative;
   z-index: 2; /* Placer en avant-plan */
   text-align: center;
-  height: 100%;
+  width: 100%;
 }
 
 .home-left-title {
@@ -88,7 +88,7 @@
   justify-content: center;
   gap: 2rem;
   margin-top: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Assurer que les éléments se plient correctement sur les petits écrans */
 }
 
 .home-btn {

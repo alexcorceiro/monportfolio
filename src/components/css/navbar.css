@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 5;
     color: whitesmoke;
+    transition: height 0.3s ease-in-out;
 }
 
 .nav-container {
@@ -61,6 +62,26 @@
 }
 
 /* Media Queries pour la réactivité */
+@media (max-width: 1200px) {
+    .nav-list {
+        width: 80%;
+    }
+
+    .nav-list-item {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-list {
+        width: 90%;
+    }
+
+    .nav-list-item {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -85,5 +106,16 @@
     .nav-list-item {
         font-size: 1.5rem;
         padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-list {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        font-size: 1.4rem;
+        padding: 10px;
     }
 }
