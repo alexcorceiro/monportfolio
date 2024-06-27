@@ -30,6 +30,7 @@
     text-overflow: ellipsis; 
     font-size: 19px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); /* Ombre sur le texte pour la profondeur */
+    cursor: pointer;
 }
 
 .nav-list-item:hover {
@@ -48,6 +49,7 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+    z-index: 10; /* Pour que le bouton soit au-dessus du menu mobile */
 }
 
 .nav-list-mobile {
