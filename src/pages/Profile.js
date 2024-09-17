@@ -4,17 +4,17 @@ import { SiReact, SiMongodb } from 'react-icons/si';
 import { FaNodeJs, FaChrome } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import { motion } from 'framer-motion';
-import "./css/profile.css"
+import "./css/profile.css";
 import Sphère from '../components/Sphère';
 
 const Profile = () => {
   const theme = useTheme();
 
   const skills = [
-    { name: "Frontend Developer", Icon: SiReact },
-    { name: "Developer Web", Icon: FaChrome },
-    { name: "Backend Developer", Icon: FaNodeJs },
-    { name: "Full Stack Developer", Icon: DiVisualstudio }
+    { name: "Développeur Frontend", Icon: SiReact },
+    { name: "Développeur Web", Icon: FaChrome },
+    { name: "Développeur Backend", Icon: FaNodeJs },
+    { name: "Développeur Full Stack", Icon: DiVisualstudio }
   ];
 
   const cardVariants = {
@@ -31,16 +31,15 @@ const Profile = () => {
   return (
     <div className='profile'>
       <div className='profile-container'>
-        <motion.h1 className='profile-title' initial="hidden" animate="visible" variants={textVariants} style={{ fontSize: '5rem' }}>
-          A Propos de Moi
+        <motion.h1 className='profile-title' initial="hidden" animate="visible" variants={textVariants} style={{ fontSize: '4rem' }}>
+          À propos de moi
         </motion.h1>
         <div className='profile-header'>
           <motion.div className='profile-header-left' initial="hidden" animate="visible" variants={textVariants}>
             <p className='profile-text'>
-              Passionné par la création de technologies qui améliorent de manière significative l'usage quotidien des utilisateurs, <br/>
-              je suis spécialisé dans le développement Full Stack avec une forte compétence en JavaScript. <br/>
-              Expert en frameworks tels que React et Express.js, et familier avec les services cloud AWS, <br/>
-              je développe des solutions logicielles qui sont non seulement efficaces et performantes, mais aussi évolutives.
+              Passionné par le développement de solutions logicielles innovantes, je me spécialise dans le développement Full Stack avec une expertise en JavaScript. <br/>
+              J'utilise des frameworks comme React et Express.js, et je suis également expérimenté avec les services cloud tels qu'AWS. <br/>
+              Mon objectif est de créer des applications performantes, évolutives et optimisées pour répondre aux besoins des utilisateurs.
             </p>
           </motion.div>
           <div className='profile-header-right'>
