@@ -1,0 +1,143 @@
+.formation {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2E2E2E;
+  color: whitesmoke;
+  padding: 2rem; /* Ajoute un padding pour un meilleur espacement */
+}
+
+.formation-title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  font-family: "Lilita One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; /* Centrer le titre pour une meilleure lisibilité */
+}
+
+.formation-container {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formation-body{
+  padding: 7rem 2rem;
+  
+}
+
+.ui.ribbon.label {
+  color: #ece8e8;
+  font-weight: bold;
+  background-color: #072679;
+  margin-bottom: 2%;
+  font-size: 1.2rem; /* Taille de texte légèrement augmentée pour améliorer la lisibilité */
+}
+
+.ui.card>.content {
+  font-size: 1rem;
+  background-color: #666;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formation-header {
+  color: #ece8e8;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: normal;
+}
+
+.formation-description {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .formation-title {
+    font-size: 3rem;
+  }
+
+  .formation-header {
+    font-size: 1.6rem;
+  }
+
+  .ui.card>.content {
+    font-size: 0.9rem;
+  }
+
+  .formation-container {
+    width: 85%;
+  }
+}
+
+/* Pour les écrans jusqu'à 992px */
+@media (max-width: 992px) {
+  .formation-title {
+    font-size: 2.5rem;
+  }
+
+  .formation-header {
+    font-size: 1.4rem;
+  }
+
+  .ui.card>.content {
+    font-size: 0.85rem;
+  }
+
+  .formation-container {
+    width: 90%;
+  }
+}
+
+/* Pour les écrans jusqu'à 768px */
+@media (max-width: 768px) {
+  .formation-title {
+    font-size: 2rem;
+  }
+
+  .formation-header {
+    font-size: 1.2rem;
+  }
+
+  .ui.card>.content {
+    font-size: 0.8rem;
+  }
+
+  .formation-container {
+    width: 95%;
+  }
+}
+
+/* Pour les petits écrans (jusqu'à 576px) */
+@media (max-width: 576px) {
+  .formation-title {
+    font-size: 1.8rem;
+  }
+
+  .formation-header {
+    font-size: 1.1rem;
+  }
+
+  .ui.card>.content {
+    font-size: 0.75rem;
+  }
+
+  .formation-container {
+    width: 100%;
+    padding: 1rem; /* Assure un bon espacement sur petits écrans */
+  }
+
+  .ui.ribbon.label {
+    font-size: 0.9rem; /* Réduction de la taille de la bannière pour petits écrans */
+  }
+}
