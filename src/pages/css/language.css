@@ -1,0 +1,118 @@
+.language {
+  width: 100%;
+  color: #E8EAF6;
+}
+
+.language-title {
+  font-size: 3rem;
+  color: orange; 
+  font-family: "Lilita One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 6rem;
+  background-color: #1c2833; 
+}
+
+.language-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.language-line {
+  display: flex;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.language-container-frontend,
+.language-container-backend,
+.language-container-databases,
+.language-container-orders {
+  width: 45vw; 
+  padding: 2rem 2.5rem;
+  border: 1px solid #2E4053;
+  border-radius: 1rem;
+  background-color: #2C3E50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.language-container-frontend:hover,
+.language-container-backend:hover,
+.language-container-databases:hover,
+.language-container-orders:hover {
+  box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.8),
+              0 0 30px 10px rgba(52, 152, 219, 0.5); 
+  border-color: #3498DB; 
+}
+
+
+.language-subtitle {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  color: #E8EAF6; 
+  font-size: 1.5rem; 
+  margin-bottom: 1rem;
+}
+
+.language-item {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.language-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  width: 100%;
+}
+
+.language-icon-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.language-icon-name label {
+  font-size: 1.1em; 
+  color: #E0E0E0; 
+}
+
+.progress-label {
+  font-size: 0.9em;
+  color: #E0E0E0; 
+}
+
+.custom-linear-progress {
+  width: 100%; 
+  height: 10px !important; 
+  background-color: #37474F; 
+}
+
+.language-item .MuiLinearProgress-root {
+  width: 100%;
+  background-color: #546E7A; 
+}
+
+.language-item .MuiLinearProgress-bar {
+  background-color: #FF9800; 
+}

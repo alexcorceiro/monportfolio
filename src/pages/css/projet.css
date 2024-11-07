@@ -1,0 +1,188 @@
+.projet {
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B2631; 
+}
+
+.projet-container {
+  color: #ECECEC; 
+  margin-bottom: 2rem; 
+  width: 95%;
+  padding: 2rem;
+}
+
+.projet-title {
+  color: #FFA726; 
+  margin-bottom: 2rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.project-details {
+  margin-top: 1rem;
+  background: #2E4053; 
+  color: #FFFFFF; 
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: auto; 
+}
+
+.project-details h6 {
+  margin-bottom: 1rem;
+  color: #F1C40F; 
+  font-size: 1.2rem;
+}
+
+.project-details p {
+  margin: 5px 0;
+  color: #ECECEC;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.tech-item {
+  background: #5D6D7E; 
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #ECECEC;
+  font-size: 0.9rem;
+}
+
+.project-close-button {
+  margin-top: 5%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-close-button:hover {
+  background-color: #555;
+}
+
+.project-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.project-dialog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-dialog-item {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.project-images-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+  height: 45vh;
+  overflow-y: auto;
+}
+
+.project-image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+
+}
+
+.project-image {
+  width: 90%;
+  max-height: 50vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.tabs-container {
+  border-bottom: none; 
+  margin-bottom: 1rem;
+}
+
+.tabs-container .MuiTabs-indicator {
+  background-color: #FFA726; 
+  height: 4px; 
+  border-radius: 2px; 
+}
+
+.tabs-container .MuiTab-root {
+  color: #B0BEC5;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 8px; 
+}
+
+.tabs-container .MuiTab-root:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.tabs-container .MuiTab-root.Mui-selected {
+  color: #FFA726; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  font-weight: bold; 
+  border-radius: 8px; 
+}
+
+.tabs-container .MuiTab-root:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 167, 38, 0.6); 
+}
+
+.project-dialog-title {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold;
+  color: #333;
+}
+
+.project-dialog-subtitle {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 600;
+  color: #444;
+}
+
+.project-dialog-description {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif; 
+  line-height: 1.6;
+  color: #3f3e3e;
+}
+
+

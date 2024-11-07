@@ -1,0 +1,162 @@
+.contact {
+  background-color: #1B2631; 
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  background: #2E4053; 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  align-items: center; 
+}
+
+.contact-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-right {
+  width: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-title {
+  color:orange;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-input, .contact-textarea {
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.contact-textarea {
+  height: 150px;
+}
+
+.contact-btn {
+  margin-top: 2rem;
+  background-color: #072679;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 1rem 3rem;
+}
+
+.contact-btn:hover {
+  background-color: #5a625a;
+}
+
+.success-message {
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #F44336;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 30px;
+  }
+
+  .contact-left {
+    width: 55%; 
+  }
+
+  .contact-right {
+    width: 45%; 
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-left {
+    width: 60%; 
+  }
+
+  .contact-right {
+    width: 40%; 
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contact-right {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-left {
+    width: 100%; 
+  }
+
+  .contact-right {
+    display: none; 
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
