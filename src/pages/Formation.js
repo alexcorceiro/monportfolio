@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid, Card, Label } from 'semantic-ui-react';
+import { Grid, Card} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import './css/formation.css';

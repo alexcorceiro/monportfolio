@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import {  LinearProgress} from '@mui/material';
 import { DiJavascript1, DiPython, DiReact, DiNodejsSmall, DiHtml5, DiCss3 } from 'react-icons/di';
 import { SiMongodb, SiMysql } from 'react-icons/si';
@@ -9,7 +9,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { motion } from 'framer-motion';
-import { SiMui } from "react-icons/si";
 import './css/language.css';
 
 const skills = [
