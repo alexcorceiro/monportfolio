@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Typography, Box, LinearProgress, Grid } from '@mui/material';
+import {  LinearProgress} from '@mui/material';
 import { DiJavascript1, DiPython, DiReact, DiNodejsSmall, DiHtml5, DiCss3 } from 'react-icons/di';
 import { SiMongodb, SiMysql } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
@@ -26,8 +26,7 @@ const skills = [
   { name: "Prisma", Icon: SiPrisma, genre: "backend", level: 65 },
   { name: "Firebase", Icon: IoLogoFirebase, genre: 'autres', level: 60 },
   { name: "Express", Icon: SiExpress, genre: "backend", level: 70 },
-  { name: "Postman", Icon: SiPostman, genre: "autres", level: 75 },
-  { name: "MUI (Material-UI)", Icon: SiMui, genre: "frontend", level: 80 }
+  { name: "Postman", Icon: SiPostman, genre: "autres", level: 75 }
 ];
 
 const groupedSkills = {
@@ -38,33 +37,9 @@ const groupedSkills = {
 }
 
 const Language = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(ref.current);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
+  
   return (
-    <div className="language" ref={ref}> 
+    <div className="language" > 
       <div className="language-container">
       <h2 className='language-title'>Compétences Techniques</h2>
           <div className='language-body'>
@@ -94,7 +69,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level} className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.4rem', width: "40vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -126,7 +101,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.4rem', width: "40vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -159,7 +134,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.4rem', width: "40vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -185,13 +160,17 @@ const Language = () => {
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${skill.level}%` }}
-                    transition={{ duration: 0.8, delay: index * 0.2 }}
+                    transition={{ 
+                      duration: 1, 
+                      delay: index * 0.4 
+                    }}
                     style={{ width: '100%', marginTop: '1rem' }}
                   >
                     <LinearProgress 
                       variant="determinate" 
-                      value={skill.level} className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.4rem', width: "40vw" }}  
+                      value={skill.level} 
+                      className='custom-linear-progress'
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
                     />
                   </motion.div>
                 </div>

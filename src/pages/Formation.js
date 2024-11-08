@@ -86,7 +86,7 @@ const Formation = () => {
 
   const cardHoverEffect = {
     hover: {
-      boxShadow: "0px 0px 30px rgba(255, 255, 255, 0.4)", 
+      boxShadow: "0px 0px 30px rgba(255, 255, 255, 0.4)",
       transition: { duration: 0.5 },
     }
   };
@@ -108,28 +108,33 @@ const Formation = () => {
                     onMouseEnter={() => setVisibleDescription(index)}
                     onMouseLeave={() => setVisibleDescription(null)}
                   >
-                    <Card.Content>
-                      <Label className='formation-year' ribbon={entry.category === "formation" ? 'right' : 'left'}>
-                        {entry.year}
-                      </Label>
-                      <Card.Header><h3 className='formation-header'>{entry.title}</h3></Card.Header>
-                      <Card.Meta style={{color:'grey'}}>{entry.subtitle}</Card.Meta>
-                      <AnimatePresence>
-                        {visibleDescription === index && (
-                          <motion.div
-                            initial="hidden"
-                            animate="visible"
-                            exit="exit"
-                            variants={descriptionVariants}
-                            className="formation-description"
-                          >
-                            <Card.Description style={{ color: 'white', marginTop: '10px' }}>
-                              {entry.description}
-                            </Card.Description>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </Card.Content>
+                  <Card.Content>
+                  <div className={`formation-year-wrapper ${entry.category === "formation" ? "ribbon-left" : "ribbon-right"}`}>
+                    <label className="formation-year">
+                      {entry.icon} {entry.year}
+                    </label>
+                  </div>
+                  <Card.Header>
+                    <h3 className='formation-header'>{entry.title}</h3>
+                  </Card.Header>
+                  <Card.Meta style={{ color: 'grey' }}>{entry.subtitle}</Card.Meta>
+                  <AnimatePresence>
+                    {visibleDescription === index && (
+                      <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        variants={descriptionVariants}
+                        className="formation-description"
+                      >
+                       <Card.Description style={{ color: 'white', marginTop: '10px', fontSize: '1.5rem' }}>
+                        {entry.description}
+                      </Card.Description>
+
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </Card.Content>
                   </Card>
                 </motion.div>
               </Grid.Column>

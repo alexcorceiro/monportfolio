@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
 import './css/projet.css';
 import { Box, Button, Chip, Dialog, DialogContent, Tab, Tabs } from '@mui/material';
-import { Github, OpenInNew } from '@mui/icons-material';
+import { OpenInNew } from '@mui/icons-material';
 
 const theme = createTheme();
 
@@ -273,7 +273,7 @@ export default function Projet() {
                   whileTap={{ scale: 0.95 }}
                   style={{ borderRadius: '3rem' }}
                 >
-                  <ImageButton focusRipple onClick={() => handleClick(project)} >
+                  <ImageButton focusRipple onClick={() => handleClick(project)} style={{height: '28vh'}}>
                     <ImageSrc style={{ backgroundImage: `url(${project.url})` }} />
                     <ImageBackdrop className="MuiImageBackdrop-root" />
                     <Typography
@@ -291,6 +291,7 @@ export default function Projet() {
                         height: '100%',
                         width: '100%',
                         color: theme.palette.common.white,
+                        fontSize: '2.5rem'
                       }}
                     >
                       {project.title}
@@ -305,16 +306,16 @@ export default function Projet() {
                     transition={{ duration: 0.5 }}
                     className="project-details"
                   >
-                    <Typography variant="h6">{project.title}</Typography>
-                    <Typography variant="body1">{project.description}</Typography>
+                    <h4 className='project-details-title'>{project.title}</h4>
+                    <p className='project-details-text'>{project.description}</p>
                     <div className="tech-stack">
                       {project.techStack.map((tech, index) => (
-                        <Chip key={index} label={tech} style={{marginRight:'1 rem.',  color: "white", fontSize: '12px'}} />
+                        <Chip key={index} label={tech} style={{  color: "white", fontSize: '1.2rem'}} />
                       ))}
                     </div>
                     <div className='project-bottom'>
                       {project.title !== 'Deviseur' && (
-                        <Button 
+                        <Button style={{ padding: "0.2rem 1rem"}}
                         href={project.githubLink}
                         target="_blank"
                         variant='autlined'
@@ -339,7 +340,7 @@ export default function Projet() {
               fullWidth
               maxWidth="md"
             >
-              <DialogContent style={{ width: "80vw", height: "70vh", }}
+              <DialogContent style={{ width: "100%", height: "auto", }}
               >
                 <h2 className='project-dialog-title'>{selectedProject.title}</h2>
                 <>
