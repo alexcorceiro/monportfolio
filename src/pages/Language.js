@@ -9,6 +9,11 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { motion } from 'framer-motion';
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaJira } from "react-icons/fa";
+import { FaTrello } from "react-icons/fa";
+
+
 import './css/language.css';
 
 const skills = [
@@ -20,12 +25,13 @@ const skills = [
   { name: "CSS", Icon: DiCss3, genre: 'frontend', level: 90 },
   { name: "AWS", Icon: FaAws, genre: "autres", level: 70 },
   { name: "MySQL", Icon: SiMysql, genre: 'databases', level: 85 },
+  { name: "PostgeSQL", Icon: BiLogoPostgresql, genre: 'databases', level: 65 },
   { name: "MongoDB", Icon: SiMongodb, genre: "databases", level: 80 },
   { name: "Git", Icon: FaGithub, genre: "autres", level: 88 },
   { name: "Prisma", Icon: SiPrisma, genre: "backend", level: 65 },
-  { name: "Firebase", Icon: IoLogoFirebase, genre: 'autres', level: 60 },
+  { name: "Jira", Icon: FaJira, genre: 'autres', level: 60 },
   { name: "Express", Icon: SiExpress, genre: "backend", level: 70 },
-  { name: "Postman", Icon: SiPostman, genre: "autres", level: 75 }
+  { name: "Trello", Icon: FaTrello, genre: "autres", level: 75 }
 ];
 
 const groupedSkills = {
