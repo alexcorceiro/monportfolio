@@ -44,7 +44,8 @@ const groupedSkills = {
 }
 
 const Language = () => {
-  
+
+
   return (
     <div className="language" > 
       <div className="language-container">
@@ -56,8 +57,10 @@ const Language = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+        
             >
               <h2 className='language-subtitle'>Front-End</h2>
+              <div className="scrollable-content" >
               {groupedSkills.frontend.map((skill, index) => (
                 <div className='language-item' key={index}>
                   <div className="language-icon-container">
@@ -76,11 +79,12 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level} className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "33vw" }}  
                     />
                   </motion.div>
                 </div>
               ))}
+              </div>
             </motion.div>
 
             <motion.div
@@ -88,8 +92,10 @@ const Language = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
+  
             >
               <h2 className='language-subtitle'>Back-End</h2>
+              <div className="scrollable-content" >
               {groupedSkills.backend.map((skill, index) => (
                 <div className='language-item' key={index}>
                   <div className="language-icon-container">
@@ -108,11 +114,12 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "33vw" }}  
                     />
                   </motion.div>
                 </div>
               ))}
+              </div>
             </motion.div>
             </div>
             <div className='language-line'>
@@ -121,8 +128,10 @@ const Language = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
+   
             >
               <h2 className='language-subtitle'>Databases</h2>
+              <div className="scrollable-content" >
               {groupedSkills.databases.map((skill, index) => (
                 <div className='language-item' key={index}>
                   <div className="language-icon-container">
@@ -141,11 +150,12 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "33vw" }}  
                     />
                   </motion.div>
                 </div>
               ))}
+              </div>
             </motion.div>
 
             <motion.div
@@ -153,8 +163,10 @@ const Language = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
+             
             >
               <h2 className='language-subtitle'>Autres</h2>
+              <div className="scrollable-content" >
               {groupedSkills.devops.map((skill, index) => (
                 <div className='language-item' key={index}>
                   <div className="language-icon-container">
@@ -177,11 +189,12 @@ const Language = () => {
                       variant="determinate" 
                       value={skill.level} 
                       className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "33vw" }}  
                     />
                   </motion.div>
                 </div>
               ))}
+              </div>
             </motion.div>
             </div>
           </div>
