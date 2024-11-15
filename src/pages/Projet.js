@@ -354,7 +354,7 @@ export default function Projet() {
                 textColor="inherit"
                 variant="fullWidth"
               >
-                <Tab label="Détails Générale" />
+                <Tab label="Détails Généraux" />
                 <Tab label="Détails Techniques" />
                 <Tab label="Capture d'écran" />
               </Tabs>
@@ -370,15 +370,15 @@ export default function Projet() {
                         <p>{selectedProject.generalDetails.impact}</p>
                       </li>
                       <li className='project-dialog-item'>
-                        <h4 className='project-dialog-subtitle'>méthodologie :</h4>
+                        <h4 className='project-dialog-subtitle'>Méthodologie :</h4>
                         <p>{selectedProject.generalDetails.methodology}</p>
                       </li>
                       <li className='project-dialog-item'>
-                        <h4 className='project-dialog-subtitle'>Lecon Apprise :</h4>
+                        <h4 className='project-dialog-subtitle'>Enseignement tiré :</h4>
                         <p>{selectedProject.generalDetails.lessonsLearned}</p>
                       </li>
                       <li className='project-dialog-item'>
-                        <h4 className='project-dialog-subtitle'>amelioration futur :</h4>
+                        <h4 className='project-dialog-subtitle'>Evolutions futures :</h4>
                         <p>{selectedProject.generalDetails.futureImprovements}</p>
                       </li>
                       

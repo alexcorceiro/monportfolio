@@ -36,13 +36,15 @@
   display: flex;
   padding: 0 2rem;
   gap: 1rem;
+  width: 90%; 
+  margin: 0.5rem 0;
 }
 
 .language-container-frontend,
 .language-container-backend,
 .language-container-databases,
 .language-container-orders {
-  width: 43vw; 
+  width: 43vw;
   height: 39.5vh;
   padding: 2rem 2.5rem;
   border: 1px solid #2E4053;
@@ -52,8 +54,10 @@
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
+
 
 .language-container-frontend:hover,
 .language-container-backend:hover,
@@ -103,7 +107,7 @@
 }
 
 .custom-linear-progress {
-  width: 100%; 
+  width: 100% ; 
   margin-bottom: 0.9rem !important;
 }
 

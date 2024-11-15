@@ -7,7 +7,6 @@ import { SiIndeed } from "react-icons/si";
 import OctogonSphere from '../components/OctagonSphere';
 import { IconButton } from '@mui/material';
 
-// Hook personnalisé pour l'effet de frappe
 function useTypingEffect(texts, speed = 150, pause = 1000) {
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -45,7 +44,7 @@ function Home({ nextPageRef, setActivePage }) {
   const typingText = useTypingEffect(roles);
 
   const openCV = () => {
-    const url = `${process.env.PUBLIC_URL}/alexcorceiro_cv.pdf`;
+    const url = `${process.env.PUBLIC_URL}/Alex_Corceiro_CV.pdf`;
     window.open(url, '_blank', 'noopener,noreferrer'); 
   }
 

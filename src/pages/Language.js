@@ -12,16 +12,17 @@ import { motion } from 'framer-motion';
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaJira } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 
 import './css/language.css';
 
 const skills = [
-  { name: "JavaScript", Icon: DiJavascript1, genre: 'frontend', level: 90 },
-  { name: "Python", Icon: DiPython, genre: 'backend', level: 85 },
-  { name: "React", Icon: DiReact, genre: 'frontend', level: 80 },
+  { name: "JavaScript", Icon: DiJavascript1, genre: 'frontend', level: 70 },
+  { name: "Python", Icon: DiPython, genre: 'backend', level: 65 },
+  { name: "React", Icon: DiReact, genre: 'frontend', level: 85 },
   { name: "Node.js", Icon: DiNodejsSmall, genre: 'backend', level: 75 },
-  { name: "HTML", Icon: DiHtml5, genre: 'frontend', level: 95 },
+  { name: "HTML", Icon: DiHtml5, genre: 'frontend', level: 75 },
   { name: "CSS", Icon: DiCss3, genre: 'frontend', level: 90 },
   { name: "AWS", Icon: FaAws, genre: "autres", level: 70 },
   { name: "MySQL", Icon: SiMysql, genre: 'databases', level: 85 },
@@ -29,9 +30,10 @@ const skills = [
   { name: "MongoDB", Icon: SiMongodb, genre: "databases", level: 80 },
   { name: "Git", Icon: FaGithub, genre: "autres", level: 88 },
   { name: "Prisma", Icon: SiPrisma, genre: "backend", level: 65 },
-  { name: "Jira", Icon: FaJira, genre: 'autres', level: 60 },
-  { name: "Express", Icon: SiExpress, genre: "backend", level: 70 },
-  { name: "Trello", Icon: FaTrello, genre: "autres", level: 75 }
+  { name: "Jira", Icon: FaJira, genre: 'autres', level: 50 },
+  { name: "Express", Icon: SiExpress, genre: "backend", level: 80 },
+  { name: "Trello", Icon: FaTrello, genre: "autres", level: 75 },
+  {name: "Typescript", Icon: SiTypescript, genre: 'autres', level: 70}
 ];
 
 const groupedSkills = {
@@ -74,7 +76,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level} className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -106,7 +108,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -139,7 +141,7 @@ const Language = () => {
                     <LinearProgress 
                       variant="determinate" 
                       value={skill.level}  className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
                     />
                   </motion.div>
                 </div>
@@ -175,7 +177,7 @@ const Language = () => {
                       variant="determinate" 
                       value={skill.level} 
                       className='custom-linear-progress'
-                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "38vw" }}  
+                      style={{ backgroundColor: '#fffb90', padding: '0.3rem', width: "35vw" }}  
                     />
                   </motion.div>
                 </div>

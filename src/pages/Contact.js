@@ -58,7 +58,7 @@ function Contact() {
             <input 
               className='contact-input' 
               type='email' 
-              placeholder='Email expéditeur ...' 
+              placeholder='Votre Email ...' 
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
               required 
