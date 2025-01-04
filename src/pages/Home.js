@@ -40,7 +40,7 @@ function useTypingEffect(texts, speed = 150, pause = 1000) {
 }
 
 function Home({ nextPageRef, setActivePage }) {
-  const roles = ['Développeur Full Stack Junior', 'Développeur backend', 'Développeur frontend'];
+  const roles = ['Développeur Full Stack Junior', 'Développeur backend', 'Développeur frontend' ,  'Chef de projet IT'];
   const typingText = useTypingEffect(roles);
 
   const openCV = () => {
